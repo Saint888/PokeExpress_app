@@ -1,15 +1,19 @@
 import React from 'react'
 import DefaultLayout from '../layouts/DefaultLayout'
 
+const myStyle = {
+    color: '#ffffff',
+    backgroundColor: '#000000',
+    height: '40px'
+    };
+
 function Show(props) {
     return (
 
         <DefaultLayout title="Pokemon:">
         <div>
-            <h1>{props.pokemon.name}</h1>
-
-            {/* <p>The <strong>{props.fruit.name}</strong> {props.fruit.readyToEat ? 'is ready to eat' : 'is NOT ready to eat'}</p>
-            <p>Its color is <span style={{ color: props.fruit.color }}>{props.fruit.color}</span></p> */}
+            <h1 style={myStyle}>Gotta Catch 'Em All</h1>
+            <h2>{props.pokemon.name}</h2>
             <br />
             <img src={props.pokemon.img} />
             <br />

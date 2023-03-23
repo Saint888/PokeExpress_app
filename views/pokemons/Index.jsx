@@ -4,6 +4,7 @@ import DefaultLayout from '../layouts/DefaultLayout'
 const myStyle = {
     color: '#ffffff',
     backgroundColor: '#000000',
+    height: '40px'
     };
 
 function Index(props) {
@@ -23,7 +24,7 @@ function Index(props) {
                     </li>
                 )}
             </ul> 
-    
+            <a href='pokemon/new'>Add Pokemon</a>
          </div>
          </DefaultLayout>
         
